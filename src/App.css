@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #243247;
+  background: #f4f7fb;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 5%;
+  background: #17365d;
+  color: white;
+}
+
+.site-header h1,
+.site-header p {
+  margin: 4px 0;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: #28a7a0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 5%;
+  background: #2876a8;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #17365d;
+}
+
+/* Content area */
+.content-area {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 5%;
+}
+
+.content-area h2 {
+  margin-top: 0;
+}
+
+/* Registration form */
+form {
+  max-width: 450px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Buttons */
+button {
+  padding: 11px 18px;
+  background: #2876a8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #17365d;
+}
+
+/* Footer */
+.site-footer {
+  padding: 18px;
+  text-align: center;
+  background: #17365d;
+  color: white;
+}
+
+.site-footer p {
+  margin: 5px;
+}
